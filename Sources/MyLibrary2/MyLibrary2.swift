@@ -3,6 +3,10 @@
 import SwiftUI
 
 public func Testing() {
-    Text("Hello, world!")
+    if #available(iOS 13.0, *) {
+        Text("Hello, world!")
+    } else {
+        // Fallback on earlier versions
+    }
 }
 
