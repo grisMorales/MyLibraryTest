@@ -2,7 +2,7 @@
 
 import SwiftUI
 
-private func Testing() {
+public func Testing() {
     Text("Hello, world!")
 }
 
