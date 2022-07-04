@@ -6,6 +6,10 @@ final class MyLibrary2Tests: XCTestCase {
         // This is an example of a functional test case.
         // Use XCTAssert and related functions to verify your tests produce the correct
         // results.
-        XCTAssertEqual(MyLibrary2().text, "Hello, World!")
+        if #available(iOS 13.0, *) {
+            XCTAssertEqual(MyLibrary2().text, "Hello, World!")
+        } else {
+            // Fallback on earlier versions
+        }
     }
 }
