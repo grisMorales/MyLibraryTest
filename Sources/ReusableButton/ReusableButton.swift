@@ -3,7 +3,7 @@ import SwiftUI
 
 @available(iOS 13.0, *)
 
-public struct ReusableText: View {
+public struct ReusableButton: View {
     
     public var body: some View {
         Button("Tap me", action: {})
