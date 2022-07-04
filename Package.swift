@@ -10,6 +10,9 @@ let package = Package(
         .library(
             name: "MyLibrary2",
             targets: ["MyLibrary2"]),
+        .library(
+                   name: "ReusableButton",
+                   targets: ["ReusableButton"]),
     ],
     dependencies: [
         // Dependencies declare other packages that this package depends on.
@@ -24,5 +27,8 @@ let package = Package(
         .testTarget(
             name: "MyLibrary2Tests",
             dependencies: ["MyLibrary2"]),
+        .target(
+                   name: "ReusableButton",
+                   dependencies: []),
     ]
 )
