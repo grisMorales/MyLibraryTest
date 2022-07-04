@@ -13,6 +13,9 @@ let package = Package(
         .library(
             name: "ReusableButton",
             targets: ["ReusableButton"]),
+        .library(
+            name: "ReusableText",
+            targets: ["ReusableText"]),
     ],
     dependencies: [
         // Dependencies declare other packages that this package depends on.
@@ -29,6 +32,9 @@ let package = Package(
             dependencies: ["MyLibrary2"]),
         .target(
             name: "ReusableButton",
+            dependencies: []),
+        .target(
+            name: "ReusableText",
             dependencies: []),
     ]
 )
