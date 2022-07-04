@@ -16,17 +16,17 @@ public struct ReusableButton: View {
         
         let buttonFont = Font.custom("Zilla Slab", size: 20).weight(.bold)
         
-        func makeBody(configuration: Self.Configuration) -> some View {
+        public func makeBody(configuration: Self.Configuration) -> some View {
             configuration
                 .label
                 .font(buttonFont)
                 .multilineTextAlignment(.center)
                 .lineLimit(1)
                 .padding(.horizontal, 10)
-                .foregroundColor()
+                .foregroundColor(Color.blue)
                 .offset(y: -1)
                 .frame(height: 30)
-                .background(Color.Token.brandPrimary)
+                .background(Color.red)
                 .clipShape(RoundedRectangle(cornerRadius: 10))
                 .scaleEffect(configuration.isPressed ? 0.9 : 1)
                 .opacity(configuration.isPressed ? 0.6 : 1)
