@@ -11,11 +11,11 @@ public struct MyLibrary2: View {
     
     public init() {}
     
-    struct AppButtonStyle: ButtonStyle {
+    public struct AppButtonStyle: ButtonStyle {
         
         let buttonFont = Font.custom("Zilla Slab", size: 20).weight(.bold)
         
-        func makeBody(configuration: Self.Configuration) -> some View {
+        public func makeBody(configuration: Self.Configuration) -> some View {
             configuration
                 .label
                 .font(buttonFont)
