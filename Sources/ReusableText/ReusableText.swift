@@ -1,5 +1,6 @@
 import SwiftUI
 
+
 @available(iOS 13.0, *)
 
 public struct ReusableText: View {
@@ -22,10 +23,10 @@ public struct ReusableText: View {
                 .multilineTextAlignment(.center)
                 .lineLimit(1)
                 .padding(.horizontal, 10)
-                .foregroundColor(.white)
+                .foregroundColor()
                 .offset(y: -1)
                 .frame(height: 30)
-                .background(Color.black)
+                .background(Color.Token.buttonTheme)
                 .clipShape(RoundedRectangle(cornerRadius: 10))
                 .scaleEffect(configuration.isPressed ? 0.9 : 1)
                 .opacity(configuration.isPressed ? 0.6 : 1)
