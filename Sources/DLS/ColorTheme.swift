@@ -1,30 +1,25 @@
 //
-//  ColorPalatte.swift
+//  Color.swift
+//  myApp
+//
+//  Created by Griselda Juarez Morales on 06/07/22.
 //
 
+import Foundation
 import SwiftUI
 
-///
-// MARK: Base color palette materials
-///
-
-/// 1. Level 2 base
-public struct BaseColor {
-    /// dynamic color sets (with dark and light mode)
+struct BaseColor{
     let contrastPrimary = Color("contrastPrimary")
     let contrastSecondary = Color("contrastSecondary")
     let themePrimary = Color("themePrimary")
     let themeSecondary = Color("themeSecondary")
     let brandPrimary = Color("brandPrimary")
-    
-    /// staic color sets (not updating along with color mode)
     let darkPrimary = Color("darkPrimary")
     let lightPrimary = Color("lightPrimary")
     let gray = Color("gray")
 }
 
-/// 2. Level 3 tokens
-public struct TokenColor {
+struct TokenColor {
     let baseColor = BaseColor()
     
     let highlight: Color!
@@ -70,13 +65,7 @@ public struct TokenColor {
     }
 }
 
-///
-// MARK: Add palatte to Color struct
-///
-///
-/// Base colors are not exposed at same layer as Color.Token but inside of which,
-/// because we encourage using Token colors instead of Base colors in most cases.
-///
-public extension Color {
-    public static let Token = TokenColor()
+extension Color {
+    static let Token = TokenColor()
 }
+
