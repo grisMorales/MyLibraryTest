@@ -64,7 +64,7 @@ struct TokenColor {
         self.inactive = baseColor.gray
     }
 }
-
+@available(iOS 13.0, *)
 extension Color {
     static let Token = TokenColor()
 }
