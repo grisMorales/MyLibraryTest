@@ -6,6 +6,6 @@ public struct ReusableText: View {
         
     }
     public var body: some View {
-        Text("REUSABLE BUTTON!")
+        Text("REUSABLE TEXT!")
     }
 }
