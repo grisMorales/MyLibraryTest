@@ -9,7 +9,7 @@ import SwiftUI
 
 import MapKit
 
-struct MapView: UIViewRepresentable {
+public struct MapView: UIViewRepresentable {
     
     public init() {}
     
