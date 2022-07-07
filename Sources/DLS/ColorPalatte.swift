@@ -81,6 +81,6 @@ struct TokenColor {
 /// Base colors are not exposed at same layer as Color.Token but inside of which,
 /// because we encourage using Token colors instead of Base colors in most cases.
 ///
-extension Color {
+public extension Color {
     static let Token = TokenColor()
 }
