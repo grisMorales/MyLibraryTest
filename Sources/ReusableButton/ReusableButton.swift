@@ -33,15 +33,14 @@ public struct ReusableButton: View {
                 .multilineTextAlignment(.center)
                 .lineLimit(1)
                 .padding(.horizontal, 10)
-                .foregroundColor(Color.)
+                .foregroundColor(Color.Token.buttonTheme)
                 .offset(y: -1)
                 .frame(height: 30)
-                .background(Color.Token)
+                .background(Color.Token.backgroundTheme)
                 .clipShape(RoundedRectangle(cornerRadius: 10))
                 .scaleEffect(configuration.isPressed ? 0.9 : 1)
                 .opacity(configuration.isPressed ? 0.6 : 1)
                 .animation(.spring())
-                //.foregroundColor(Color.Token.textTheme)
         }
     }
 
