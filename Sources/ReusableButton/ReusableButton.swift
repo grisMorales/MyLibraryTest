@@ -15,16 +15,6 @@ public struct ReusableButton: View {
         
         let buttonFont = Font.custom("Zilla Slab", size: 20).weight(.bold)
         
-        
-        func getColor() -> Color {
-            switch self {
-            case .highlight:
-                return Color.Token.textHighlight
-            case .main:
-                return Color.Token.textDefault
-            }
-        }
-        
         public func makeBody(configuration: Self.Configuration) -> some View {
             configuration
                 .label
