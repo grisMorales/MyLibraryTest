@@ -22,7 +22,7 @@ public struct ReusableButton: View {
                 .multilineTextAlignment(.center)
                 .lineLimit(1)
                 .padding(.horizontal, 10)
-                .foregroundColor(StyleDictionarySize.
+                .foregroundColor(StyleDictionaryColor.baseGreen)
                 .offset(y: -1)
                 .frame(height: 30)
                 .background(Color.Token.backgroundTheme)
