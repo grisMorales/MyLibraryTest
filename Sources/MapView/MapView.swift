@@ -6,7 +6,6 @@
 //
 
 import SwiftUI
-
 import MapKit
 
 public struct MapView: UIViewRepresentable {
