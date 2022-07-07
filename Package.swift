@@ -16,6 +16,9 @@ let package = Package(
         .library(
             name: "ReusableText",
             targets: ["ReusableText"]),
+        .library(
+            name: "MapView",
+            targets: ["MapView"]),
     ],
     dependencies: [
         // Dependencies declare other packages that this package depends on.
@@ -35,6 +38,9 @@ let package = Package(
             dependencies: []),
         .target(
             name: "ReusableText",
+            dependencies: []),
+        .target(
+            name: "MapView",
             dependencies: []),
     ]
 )
