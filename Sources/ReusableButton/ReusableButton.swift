@@ -1,5 +1,5 @@
 import SwiftUI
-//import Color
+import Color
 
 @available(iOS 13.0, *)
 
@@ -33,10 +33,10 @@ public struct ReusableButton: View {
                 .multilineTextAlignment(.center)
                 .lineLimit(1)
                 .padding(.horizontal, 10)
-                .foregroundColor(Color.Token.buttonTheme)
+                .foregroundColor(Color.token.backgroundTheme)
                 .offset(y: -1)
                 .frame(height: 30)
-                .background(Color.Token.backgroundTheme)
+                .background(Color.token.backgroundTheme)
                 .clipShape(RoundedRectangle(cornerRadius: 10))
                 .scaleEffect(configuration.isPressed ? 0.9 : 1)
                 .opacity(configuration.isPressed ? 0.6 : 1)

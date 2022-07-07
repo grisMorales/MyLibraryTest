@@ -1,9 +1,5 @@
 //
 //  ColorPalatte.swift
-//  swiftui-design-system-demo
-//
-//  Created by 邵名浦 on 2019/9/3.
-//  Copyright © 2019 vinceshao. All rights reserved.
 //
 
 import SwiftUI
@@ -13,7 +9,7 @@ import SwiftUI
 ///
 
 /// 1. Level 2 base
-struct BaseColor {
+public struct BaseColor {
     /// dynamic color sets (with dark and light mode)
     let contrastPrimary = Color("contrastPrimary")
     let contrastSecondary = Color("contrastSecondary")
@@ -28,7 +24,7 @@ struct BaseColor {
 }
 
 /// 2. Level 3 tokens
-struct TokenColor {
+public struct TokenColor {
     let baseColor = BaseColor()
     
     let highlight: Color!
@@ -82,5 +78,5 @@ struct TokenColor {
 /// because we encourage using Token colors instead of Base colors in most cases.
 ///
 public extension Color {
-    static let Token = TokenColor()
+    public static let Token = TokenColor()
 }
