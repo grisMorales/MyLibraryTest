@@ -1,9 +1,5 @@
 //
 //  Typography.swift
-//  swiftui-design-system-demo
-//
-//  Created by 邵名浦 on 2019/9/3.
-//  Copyright © 2019 vinceshao. All rights reserved.
 //
 
 import SwiftUI
