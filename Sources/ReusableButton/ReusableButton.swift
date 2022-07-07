@@ -15,6 +15,16 @@ public struct ReusableButton: View {
         
         let buttonFont = Font.custom("Zilla Slab", size: 20).weight(.bold)
         
+        
+        func getColor() -> Color {
+            switch self {
+            case .highlight:
+                return Color.Token.textHighlight
+            case .main:
+                return Color.Token.textDefault
+            }
+        }
+        
         public func makeBody(configuration: Self.Configuration) -> some View {
             configuration
                 .label
@@ -22,14 +32,15 @@ public struct ReusableButton: View {
                 .multilineTextAlignment(.center)
                 .lineLimit(1)
                 .padding(.horizontal, 10)
-                .foregroundColor(Color.token.backgroundTheme)
+                .foregroundColor(Color.blue)
                 .offset(y: -1)
                 .frame(height: 30)
-                .background(Color.token.backgroundTheme)
+                .background(Color.red)
                 .clipShape(RoundedRectangle(cornerRadius: 10))
                 .scaleEffect(configuration.isPressed ? 0.9 : 1)
                 .opacity(configuration.isPressed ? 0.6 : 1)
                 .animation(.spring())
+                //.foregroundColor(Color.Token.textTheme)
         }
     }
 
