@@ -7,7 +7,7 @@
 
 import Foundation
 import SwiftUI
-
+@available(iOS 13.0, *)
 struct BaseColor{
     let contrastPrimary = Color("contrastPrimary")
     let contrastSecondary = Color("contrastSecondary")
@@ -18,7 +18,7 @@ struct BaseColor{
     let lightPrimary = Color("lightPrimary")
     let gray = Color("gray")
 }
-
+@available(iOS 13.0, *)
 struct TokenColor {
     let baseColor = BaseColor()
     
