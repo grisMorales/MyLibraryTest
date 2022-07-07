@@ -4,9 +4,8 @@
 
 import SwiftUI
 
-///
-// MARK: Base typography materials
-///
+
+@available(iOS 13.0, *)
 struct TokenTypography {
 
     ///
@@ -59,9 +58,8 @@ struct TokenTypography {
         }
     }
 
-    ///
-    // 2. Expose data
-    ///
+
+    @available(iOS 13.0, *)
     let mainFont: Font!
     let subFont: Font!
     
@@ -72,21 +70,21 @@ struct TokenTypography {
 }
 
 /// Helper functions
+///
+@available(iOS 13.0, *)
 extension TokenTypography {
     public func sizingFont(font: FontFamilyToken, size: FontSizeToken) -> Font {
         return Font.custom(font.getValue(), size: size.getValue())
     }
 }
 
-///
-// MARK: Expose Typography to Font struct
-///
 /// ------
 /// To set environment Font, please chain setting
 /// `.environment(\.font, Font.Typography.mainFont)`
 /// to entry View of the app.
 /// ------
-///
+
+@available(iOS 13.0, *)
 extension Font {
     static let Typography = TokenTypography()
 }
