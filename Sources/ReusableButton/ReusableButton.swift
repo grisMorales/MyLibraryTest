@@ -18,11 +18,11 @@ public struct ReusableButton: View {
         public func makeBody(configuration: Self.Configuration) -> some View {
             configuration
                 .label
-                .font(buttonFont)
+                .font(StyleDictionaryColor.baseGreen)
                 .multilineTextAlignment(.center)
                 .lineLimit(1)
                 .padding(.horizontal, 10)
-                .foregroundColor(Color.Token.buttonTheme)
+                .foregroundColor(StyleDictionarySize.
                 .offset(y: -1)
                 .frame(height: 30)
                 .background(Color.Token.backgroundTheme)
