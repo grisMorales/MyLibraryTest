@@ -2,10 +2,10 @@ import SwiftUI
 
 @available(iOS 13.0, *)
 
-public struct ReusableButton: View, Text: String {
+public struct ReusableButton: View {
     
     public var body: some View {
-        Button(Text, action: {})
+        Button("Tap me", action: {})
              .buttonStyle(AppButtonStyle())
     }
     
