@@ -50,7 +50,7 @@ struct TokenColor {
         /// contrastPrimary
         self.buttonContrast = baseColor.contrastPrimary
         self.textDefault = baseColor.contrastPrimary
-        self.backgroundDefault = baseColor.contrastPrimary
+        self.backgroundDefault = baseColor.contrastSecondary
         
         /// brand
         self.highlight = baseColor.brandPrimary
