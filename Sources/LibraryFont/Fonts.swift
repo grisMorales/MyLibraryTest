@@ -1,13 +1,15 @@
 import SwiftUI
 
+//Enum nombre de las fuentes , no importa que el archivo tenga un nombre diferente
 public enum dynaPuffFamily: String, CaseIterable {
-    case bold = "DynaPuff-Bold"
-    case medium = "DynaPuff-Medium"
-    case regular = "DynaPuff-Regular"
-    case extraBold = "DynaPuff-SemiBold"
+    
+    case bold = "DynaPuffCondensed-Bold"
+    case medium = "DynaPuffCondensed-Medium"
+    case regular = "DynaPuffCondensed-Regular"
+    case extraBold = "DynaPuffCondensed-SemiBold"
     case regularDos = "BeautifulPeople-Regular"
     case extraBoldDos = "VeganStyle-Regular"
-    case press = "Press-Regular"
+    case press = "PressStart2P-Regular"
 }
 
 @available(iOS 13.0, *)
