@@ -1,10 +1,10 @@
 import SwiftUI
 
 public enum dynaPuffFamily: String, CaseIterable {
-    case bold = "DynaPuff_Bold"
-    case medium = "DynaPuff_Medium"
-    case regular = "DynaPuff_Regular"
-    case extraBold = "DynaPuff_SemiBold"
+    case bold = "DynaPuff-Bold"
+    case medium = "DynaPuff-Medium"
+    case regular = "DynaPuff-Regular"
+    case extraBold = "DynaPuff-SemiBold"
 }
 
 @available(iOS 13.0, *)
