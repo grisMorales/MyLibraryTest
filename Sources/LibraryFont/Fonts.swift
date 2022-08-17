@@ -1,6 +1,7 @@
 import SwiftUI
 
-//Enum nombre de las fuentes , no importa que el archivo tenga un nombre diferente
+//Enum nombre de las fuentes
+//NOMBRE de la fuente IGUAL  FILE
 public enum dynaPuffFamily: String, CaseIterable {
     
     case bold = "DynaPuffCondensed-Bold"
