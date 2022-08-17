@@ -7,6 +7,7 @@ public enum dynaPuffFamily: String, CaseIterable {
     case extraBold = "DynaPuff-SemiBold"
     case regularDos = "BeautifulPeople-Regular"
     case extraBoldDos = "VeganStyle-Regular"
+    case press = "Press-Regular"
 }
 
 @available(iOS 13.0, *)
@@ -37,7 +38,7 @@ public extension Font {
     static let dynaPuffLargeTitle = custom(.bold, relativeTo: .largeTitle)
     static let dynaPuffLargeTitleBlack = custom(.extraBold, relativeTo: .largeTitle)
     static let dynaPuffLargeTitleSemiBold = custom(.medium, relativeTo: .largeTitle)
-    static let dynaPuffTitle1 = custom(.bold, relativeTo: .title)
+    static let dynaPuffTitle1 = custom(.press, relativeTo: .title)
     static let dynaPuffHeadline = custom(.medium, relativeTo: .headline)
     static let dynaPuffSubHeadline = custom(.regular, relativeTo: .subheadline)
     static let dynaPuffSubHeadlineSemiBold = custom(.medium, relativeTo: .subheadline)
