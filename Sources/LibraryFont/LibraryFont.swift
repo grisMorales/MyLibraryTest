@@ -1,6 +1,6 @@
 import SwiftUI
 
-struct LibraryFont {
+public struct LibraryFont {
     public static func registerFonts() {
         dynaPuffFamily.allCases.forEach {
             registerFont(bundle: .module, fontName: $0.rawValue, fontExtension: "ttf")
