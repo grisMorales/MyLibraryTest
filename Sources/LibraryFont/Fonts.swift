@@ -41,7 +41,7 @@ public extension Font {
     static let dynaPuffHeadline = custom(.medium, relativeTo: .headline)
     static let dynaPuffSubHeadline = custom(.regular, relativeTo: .subheadline)
     static let dynaPuffSubHeadlineSemiBold = custom(.medium, relativeTo: .subheadline)
-    static let dynaPuffFootnote = custom(.regular, relativeTo: .footnote)
-    static let dynaPuffFootnoteSemiBold = custom(.medium, relativeTo: .footnote)
+    static let dynaPuffFootnote = custom(.regularDos, relativeTo: .footnote)
+    static let dynaPuffFootnoteSemiBold = custom(.extraBoldDos, relativeTo: .footnote)
     
 }
