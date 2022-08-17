@@ -1,6 +1,6 @@
 import SwiftUI
 
-public enum Fonts: String, CaseIterable {
+public enum dynaPuffFamily: String, CaseIterable {
     case bold = "DynaPuff_Bold"
     case medium = "DynaPuff_Medium"
     case regular = "DynaPuff_Regular"
@@ -27,7 +27,7 @@ public extension Font.TextStyle {
 
 @available(iOS 14.0, *)
 public extension Font {
-    private static func custom(_ font: Fonts, relativeTo style: Font.TextStyle) -> Font {
+    private static func custom(_ font: dynaPuffFamily, relativeTo style: Font.TextStyle) -> Font {
         custom(font.rawValue, size: style.size, relativeTo: style)
     }
 
