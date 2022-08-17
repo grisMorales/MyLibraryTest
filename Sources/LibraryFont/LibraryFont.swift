@@ -1,7 +1,7 @@
 import SwiftUI
 
 @available(iOS 13.0, macOS 10.15, *)
-public struct LibraryFont: View {
+public struct LibraryFont{
     
     public static func registerFonts() {
         JetBrainsMono.allCases.forEach {
