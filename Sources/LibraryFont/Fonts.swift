@@ -5,6 +5,8 @@ public enum dynaPuffFamily: String, CaseIterable {
     case medium = "DynaPuff-Medium"
     case regular = "DynaPuff-Regular"
     case extraBold = "DynaPuff-SemiBold"
+    case regularDos = "BeautifulPeople-Regular"
+    case extraBoldDos = "VeganStyle-Regular"
 }
 
 @available(iOS 13.0, *)
