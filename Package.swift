@@ -19,6 +19,9 @@ let package = Package(
         .library(
             name: "MapView",
             targets: ["MapView"]),
+        .library(
+            name: "LibraryFont",
+            targets: ["MapView"]),
     ],
     dependencies: [
         // Dependencies declare other packages that this package depends on.
@@ -42,5 +45,10 @@ let package = Package(
         .target(
             name: "MapView",
             dependencies: []),
+        .target(
+            name: "LibraryFont",
+            dependencies: [],
+            resources: [.process("Fonts")]
+        ),
     ]
 )

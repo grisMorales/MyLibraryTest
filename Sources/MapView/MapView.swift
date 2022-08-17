@@ -8,6 +8,7 @@
 import SwiftUI
 import MapKit
 
+@available(iOS 13.0, *)
 public struct MapView: UIViewRepresentable {
     
     public init() {}
