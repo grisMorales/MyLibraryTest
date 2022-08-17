@@ -21,7 +21,7 @@ let package = Package(
             targets: ["MapView"]),
         .library(
             name: "LibraryFont",
-            targets: ["MapView"]),
+            targets: ["LibraryFont"]),
     ],
     dependencies: [
         // Dependencies declare other packages that this package depends on.
