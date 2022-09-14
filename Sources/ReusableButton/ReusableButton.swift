@@ -6,7 +6,7 @@ public struct ReusableButton: View {
     
     public var body: some View {
         Button("Tap me", action: {})
-            // .buttonStyle(AppButtonStyle())
+             .buttonStyle(AppButtonStyle())
     }
     
     public init() {}
@@ -22,10 +22,10 @@ public struct ReusableButton: View {
                 .multilineTextAlignment(.center)
                 .lineLimit(1)
                 .padding(.horizontal, 10)
-                .foregroundColor(Color.Token.buttonHighlight)
+                .foregroundColor(Color.Token.)
                 .offset(y: -1)
                 .frame(height: 30)
-                .background(Color.Token.backgroundDefault)
+                .background(Color.Token.textTheme)
                 .clipShape(RoundedRectangle(cornerRadius: 10))
                 .scaleEffect(configuration.isPressed ? 0.9 : 1)
                 .opacity(configuration.isPressed ? 0.6 : 1)
