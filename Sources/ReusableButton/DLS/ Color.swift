@@ -28,7 +28,7 @@ struct TokenColor {
     let inactive: Color!
     
     let textDefault: Color!
-    let textTheme: Color!
+    let textTheme: UIColor!
     let textNote: Color!
     let textHighlight: Color!
     let textLight: Color!
