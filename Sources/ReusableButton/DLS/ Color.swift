@@ -17,7 +17,7 @@ struct BaseColor{
     let darkPrimary = Color("darkPrimary")
     let lightPrimary = Color("lightPrimary")
     let gray = Color("gray")
-    let grisTest = Color("#145B97")
+    let grisTest = UIColor(rgb: 0xFFFFFF)//Color("#145B97")
 }
 
 @available(iOS 13.0, *)
