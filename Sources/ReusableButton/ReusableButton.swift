@@ -25,7 +25,7 @@ public struct ReusableButton: View {
                 .foregroundColor(Color.red)
                 .offset(y: -1)
                 .frame(height: 30)
-                .background(Color.yellow)
+                .background(Color("#145B97"))
                 .clipShape(RoundedRectangle(cornerRadius: 10))
                 .scaleEffect(configuration.isPressed ? 0.9 : 1)
                 .opacity(configuration.isPressed ? 0.6 : 1)
