@@ -4,7 +4,7 @@ Libreria que permite la construcción de los compontentes del sistema de diseño
 
 ****Recomendaciones:
 
--Asociar repositorio de código fuente antes de la descarga del aapp desde la opción Preferences:
+-Asociar repositorio de código fuente antes de la descarga de la app desde la opción Preferences:
   -> Source Control/Git 
   
 -Al realizar la compilación del proyecto en el target de la app se recomienda utilizar un dispositivo con iOS 13 o superior.
