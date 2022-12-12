@@ -1,35 +1,54 @@
-Library Component
+<h1>Library Components SwiftUI</h1>
 
-Libreria que permite la construcción de los compontentes del sistema de diseño
+Library that allows building components of the design system
 
-****Recomendaciones:
+<h3>Recommendations:</h3>
 
--Asociar repositorio de código fuente antes de la descarga de la app desde la opción Preferences:
-  -> Source Control/Git 
+<ul>
+<li>Associate source code repository before application download from the Preferences option:
+  <ul>
+  <li>Source Control/Git </li>
+  </ul>
+</li>
   
--Al realizar la compilación del proyecto en el target de la app se recomienda utilizar un dispositivo con iOS 13 o superior.
+<li>When compiling the project in the app target it is recommended to use a device with iOS 13 or higher.
+</li>
+<li>Consider having the latest Xcode update
+</li>
+</ul>
 
--Considerar tener la última actualización de Xcode
+<h3>Software installation:</h3>
+<ol>
+<li>Download the project</li>
+<li>Compile the library Commnad + B </li>
+</ol>
 
-****Instalación
+<h3>Library integration </h3>
+<ol>
+<li>Check in source code changes from the Source Control option:
+  Commit -> documentar cambios</li>
+<li>Push into the designated branch</li>
+</ol>
 
-1.-Descargar el proyecto
-2.-Compilar la librería Commnad + B
+<h3>Integration in the base app</h3>
+<ol>
+<li>Access the General project properties</li>
+  <ul>
+  <li>Frameworks,Libraries and Embedded Content</li>
+  </ul>
+<li>select the add option</li>
+  <ul>
+    <li>Add Package Dependency</li>
+  </ul>
+<li>When accessing the library you must select the components you want to add from the component library</li>
 
-****Integración de librería 
-
-1.-Proteger cambios de código fuente desde la opción Source Control:
-  Commit -> documentar cambios
-2.-Realizar Push dentro de la rama designada
-
-Integración en la app base
-1.-Acceder a las propiedades del proyecto General->Frameworks,Libraries and Embedded Content
-2.-Presiona la opción de agregar ->Add Package Dependency
-3.-Al acceder a la librería debéra seleccionar los componentes que desea agregar de la biblioteca de los componentes
-
-Una vez integrada la librería simplemente se descargan los cambios y se compila nuevamente la app desde la opción
- simplemente se descargan los cambios y se compila nuevamente la app:
- File-> Packages -> Update to lastest package versions.
+Once the library is integrated, the changes are simply downloaded and the app is compiled again from the option
+ the changes are simply downloaded and the app is compiled again:
+  <ol>
+    <li>File</li>
+    <li>Packages</li>
+    <li>Update to lastest package versions</li>
+   </ol>
  
  
 
